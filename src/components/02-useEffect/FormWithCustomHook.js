@@ -1,24 +1,27 @@
-import React, { useState } from "react";
-import Message from "./Message";
+import { exitCode } from "process";
+import React, { useEffect } from "react";
+import { useForm } from "../../hooks/useForm";
 import "./styles.css";
 
 const FormWithCustomHook = () => {
-  const [form, setForm] = useState({
+  const [formValues, handleInputChange] = useForm({
     nombre: "",
     password: "",
     email: "",
   });
-  const { nombre, password, email } = form;
+  const { nombre, password, email } = formValues;
 
-  const handleInputChange = ({ target: { name, value } }) => {
-    setForm({
-      ...form,
-      [name]: value,
-    });
+  useEffect(() => {
+    console.log("email de custom hook cambios");
+  }, [email]);
+
+  const handleSubmit = (evt) => {
+    evt.preventDefault();
+    console.log(formValues);
   };
 
   return (
-    <>
+    <form onSubmit={handleSubmit}>
       <h1>FormWithCustomHook</h1>
       <hr />
       <div className="form-group">
@@ -55,7 +58,11 @@ const FormWithCustomHook = () => {
           onChange={handleInputChange}
         />
       </div>
-    </>
+
+      <button type="submit" className="btn btn-primary">
+        Enviar
+      </button>
+    </form>
   );
 };
 
