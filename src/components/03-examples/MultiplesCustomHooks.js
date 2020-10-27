@@ -6,7 +6,7 @@ import "./styles.css";
 const MultiplesCustomHooks = () => {
   const { counter, increment } = useCounter(1);
 
-  const { data, loading, error } = useFetch(
+  const { data, loading } = useFetch(
     `https://www.breakingbadapi.com/api/quotes/${counter}`
   );
   const { quote_id, quote, author } = !!data && data[0];
