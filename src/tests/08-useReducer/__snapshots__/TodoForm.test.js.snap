@@ -1,0 +1,105 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas unitarias en el componente TodoForm.js se debe de llamar la funcion dispatch 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <h3>
+    Crear nueva tarea
+  </h3>
+  <div
+    className="form-group"
+  >
+    <label
+      htmlFor="descripcion"
+    >
+      Descripcion: 
+    </label>
+    <input
+      className="form-control"
+      id="descripcion"
+      name="desc"
+      onChange={[Function]}
+      placeholder="Ingrese descripcion de tarea"
+      type="text"
+      value=""
+    />
+  </div>
+  <div
+    className="form-check"
+  >
+    <input
+      checked={false}
+      className="form-check-input"
+      id="done"
+      name="done"
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <label
+      className="form-check-label"
+      htmlFor="done"
+    >
+      Realizado
+    </label>
+  </div>
+  <button
+    className="btn btn-primary mt-3"
+    type="submit"
+  >
+    Añadir
+  </button>
+</form>
+`;
+
+exports[`Pruebas unitarias en el componente TodoForm.js se debe mostrar el componente <TodoForm /> correctamente 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <h3>
+    Crear nueva tarea
+  </h3>
+  <div
+    className="form-group"
+  >
+    <label
+      htmlFor="descripcion"
+    >
+      Descripcion: 
+    </label>
+    <input
+      className="form-control"
+      id="descripcion"
+      name="desc"
+      onChange={[Function]}
+      placeholder="Ingrese descripcion de tarea"
+      type="text"
+      value=""
+    />
+  </div>
+  <div
+    className="form-check"
+  >
+    <input
+      checked={false}
+      className="form-check-input"
+      id="done"
+      name="done"
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <label
+      className="form-check-label"
+      htmlFor="done"
+    >
+      Realizado
+    </label>
+  </div>
+  <button
+    className="btn btn-primary mt-3"
+    type="submit"
+  >
+    Añadir
+  </button>
+</form>
+`;

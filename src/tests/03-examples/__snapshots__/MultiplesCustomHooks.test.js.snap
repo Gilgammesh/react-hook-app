@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas unitarias en el componente MultiplesCustomHooks.js se debe mostrar el componente <MultiplesCustomHooks /> correctamente 1`] = `
+<div>
+  <h1>
+    Breaking Bad Quote
+  </h1>
+  <hr />
+  <div
+    className="alert alert-info text-center"
+  >
+    Loading ...
+  </div>
+  <button
+    className="btn btn-success"
+    onClick={[Function]}
+  >
+    Siguiente quote
+  </button>
+</div>
+`;
+
+exports[`Pruebas unitarias en el hook personalizado MultiplesCustomHooks.js se debe mostrar el componente <MultiplesCustomHooks /> correctamente 1`] = `
+<div>
+  <h1>
+    Breaking Bad Quote
+  </h1>
+  <hr />
+  <div
+    className="alert alert-info text-center"
+  >
+    Loading ...
+  </div>
+  <button
+    className="btn btn-success"
+    onClick={[Function]}
+  >
+    Siguiente quote
+  </button>
+</div>
+`;

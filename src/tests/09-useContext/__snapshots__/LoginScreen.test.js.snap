@@ -1,0 +1,114 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas unitarias en el componente LoginScreen.js se debe mostrar el componente <LoginScreen /> correctamente 1`] = `
+Array [
+  <nav
+    className="navbar navbar-expand-lg navbar-dark bg-primary"
+  >
+    <div
+      className="navbar-collapse"
+    >
+      <ul
+        className="navbar-nav mr-auto"
+      >
+        <a
+          aria-current={null}
+          className="nav-item nav-link"
+          href="/home"
+          onClick={[Function]}
+        >
+          Home
+        </a>
+        <a
+          aria-current={null}
+          className="nav-item nav-link"
+          href="/about"
+          onClick={[Function]}
+        >
+          About
+        </a>
+        <a
+          aria-current={null}
+          className="nav-item nav-link"
+          href="/login"
+          onClick={[Function]}
+        >
+          Login
+        </a>
+      </ul>
+    </div>
+  </nav>,
+  <div
+    className="m-4"
+  >
+    <h1>
+      LoginScreen
+    </h1>
+    <hr />
+    <form
+      onSubmit={[Function]}
+    >
+      <div
+        className="form-group"
+      >
+        <label
+          htmlFor="name"
+        >
+          Nombre
+        </label>
+        <input
+          className="form-control"
+          id="name"
+          name="name"
+          onChange={[Function]}
+          required={true}
+          type="text"
+          value=""
+        />
+      </div>
+      <div
+        className="form-group"
+      >
+        <label
+          htmlFor="email"
+        >
+          Email
+        </label>
+        <input
+          className="form-control"
+          id="email"
+          name="email"
+          onChange={[Function]}
+          required={true}
+          type="email"
+          value=""
+        />
+      </div>
+      <div
+        className="form-group"
+      >
+        <label
+          htmlFor="password"
+        >
+          Contraseña
+        </label>
+        <input
+          className="form-control"
+          id="password"
+          name="password"
+          onChange={[Function]}
+          required={true}
+          type="password"
+          value=""
+        />
+      </div>
+      <button
+        className="btn btn-primary"
+        type="submit"
+      >
+        Ingresar
+      </button>
+    </form>
+  </div>,
+]
+`;

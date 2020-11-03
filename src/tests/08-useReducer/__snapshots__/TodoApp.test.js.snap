@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas unitarias en el componente TodoApp.js se debe mostrar el componente <TodoApp /> correctamente 1`] = `
+<div>
+  <h1>
+    Todo App (
+    0
+    )
+  </h1>
+  <hr />
+  <TodoForm
+    dispatch={[Function]}
+  />
+  <hr />
+  <h3>
+    Tareas
+  </h3>
+  <div
+    className="row"
+  />
+</div>
+`;

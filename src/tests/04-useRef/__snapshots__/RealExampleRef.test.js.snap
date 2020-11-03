@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas unitarias en el componente RealExampleRef.js se debe mostrar el componente <MultiplesCustomHooks /> correctamente 1`] = `
+<div>
+  <h1>
+    Real Example Ref
+  </h1>
+  <hr />
+  <button
+    className="btn btn-info mt-4"
+    onClick={[Function]}
+  >
+    Show/Hide
+  </button>
+</div>
+`;
+
+exports[`Pruebas unitarias en el componente RealExampleRef.js se debe mostrar el componente <RealExampleRef /> correctamente 1`] = `
+<div>
+  <h1>
+    Real Example Ref
+  </h1>
+  <hr />
+  <button
+    className="btn btn-info mt-4"
+    onClick={[Function]}
+  >
+    Show/Hide
+  </button>
+</div>
+`;

@@ -37,7 +37,7 @@ export const useFetch = (url) => {
         if (isMounted.current) {
           setState({
             data: null,
-            loading: true,
+            loading: false,
             error,
           });
         }

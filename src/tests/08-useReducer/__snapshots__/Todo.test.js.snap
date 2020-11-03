@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas unitarias en el componente Todo.js se debe llamar la función eliminar en el componente 1`] = `
+<div
+  className="col-sm-6 mt-3"
+>
+  <div
+    className="card"
+  >
+    <div
+      className="card-body"
+    >
+      <h5
+        className="card-title"
+      >
+        ID - 
+        1
+      </h5>
+      <p
+        className="card-text"
+      >
+        1
+        .- 
+        Aprender React
+      </p>
+      <p
+        className="card-text"
+      >
+        <span
+          className="badge badge-success"
+        >
+          Hecho
+        </span>
+      </p>
+      <button
+        className="btn btn-danger"
+        onClick={[Function]}
+      >
+        Eliminar
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Pruebas unitarias en el componente Todo.js se debe mostrar el componente <Todo /> correctamente 1`] = `
+<div
+  className="col-sm-6 mt-3"
+>
+  <div
+    className="card"
+  >
+    <div
+      className="card-body"
+    >
+      <h5
+        className="card-title"
+      >
+        ID - 
+        1
+      </h5>
+      <p
+        className="card-text"
+      >
+        1
+        .- 
+        Aprender React
+      </p>
+      <p
+        className="card-text"
+      >
+        <span
+          className="badge badge-success"
+        >
+          Hecho
+        </span>
+      </p>
+      <button
+        className="btn btn-danger"
+        onClick={[Function]}
+      >
+        Eliminar
+      </button>
+    </div>
+  </div>
+</div>
+`;
