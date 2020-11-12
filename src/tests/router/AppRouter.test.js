@@ -2,10 +2,10 @@ import React from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 import { mount } from "enzyme";
 import "@testing-library/jest-dom";
-import HomeScreen from "../../components/09-useContext/HomeScreen";
+import AppRouter from "../../router/AppRouter";
 import UserContext from "../../components/09-useContext/UserContext";
 
-describe("Pruebas unitarias en el componente HomeScreen.js", () => {
+describe("Pruebas unitarias en el componente AppRouter.js", () => {
   const user = {
     id: 1,
     name: "Carlos",
@@ -14,7 +14,7 @@ describe("Pruebas unitarias en el componente HomeScreen.js", () => {
   };
   const setUser = jest.fn();
   /************************************************************************************/
-  test("se debe mostrar el componente <HomeScreen /> correctamente", () => {
+  test("se debe mostrar el componente <AppRouter /> correctamente", () => {
     const wrapper = mount(
       <UserContext.Provider
         value={{
@@ -22,9 +22,7 @@ describe("Pruebas unitarias en el componente HomeScreen.js", () => {
           setUser,
         }}
       >
-        <Router>
-          <HomeScreen />
-        </Router>
+        <AppRouter />
       </UserContext.Provider>
     );
     expect(wrapper).toMatchSnapshot();

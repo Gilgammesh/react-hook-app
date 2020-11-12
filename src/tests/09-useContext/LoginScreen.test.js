@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router } from "react-router-dom";
-import { shallow, mount } from "enzyme";
+import { mount } from "enzyme";
+import { act } from "@testing-library/react";
 import "@testing-library/jest-dom";
 import LoginScreen from "../../components/09-useContext/LoginScreen";
 import UserContext from "../../components/09-useContext/UserContext";
@@ -13,6 +14,7 @@ describe("Pruebas unitarias en el componente LoginScreen.js", () => {
     password: "123456",
   };
   const setUser = jest.fn();
+  const func = () => {};
   /************************************************************************************/
   test("se debe mostrar el componente <LoginScreen /> correctamente", () => {
     const wrapper = mount(
@@ -44,29 +46,10 @@ describe("Pruebas unitarias en el componente LoginScreen.js", () => {
       </UserContext.Provider>
     );
 
-    wrapper.find("input#name").prop("onChange")({
-      target: {
-        type: "text",
-        checked: false,
-        name: "name",
-        value: user.name,
-      },
+    act(() => {
+      wrapper.find("form").prop("onSubmit")({ preventDefault: func });
     });
-    wrapper.find("input#email").prop("onChange")({
-      target: {
-        type: "text",
-        checked: false,
-        name: "email",
-        value: user.email,
-      },
-    });
-    wrapper.find("input#password").prop("onChange")({
-      target: {
-        type: "text",
-        checked: false,
-        name: "password",
-        value: user.password,
-      },
-    });
+    expect(setUser).toHaveBeenCalled();
+    expect(setUser).toHaveBeenCalledTimes(1);
   });
 });
